@@ -70,7 +70,7 @@ namespace coen79_lab2
     class statistician
     {
         public:
-            statistician(int in_len = 0, double in_total = 0, double in_min = 9999, double in_max = -9999);
+            statistician(int in_len = 0, double in_total = 0, double in_min = 0, double in_max = 0);
             void next(double r);
             void reset();
             int length() const;

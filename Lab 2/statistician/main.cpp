@@ -1,4 +1,4 @@
-#include "statistician.cpp"
+#include "statistician.h"
 #include <iostream>
 
 using namespace std;

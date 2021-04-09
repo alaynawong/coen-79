@@ -19,11 +19,12 @@ namespace coen79_lab2
 
     void statistician::next(double r) {
         // checks if inputted value is greater than max or min and updates
-        if (r > max) {
+        if (len == 0) {
             max = r;
-        }
-        if (r < min) {
             min = r;
+        } else {
+            if (r > max) max = r;
+            if (r < min) min = r;
         }
         total += r; // adding value to total
         len++;  // increasing length by one
@@ -33,8 +34,8 @@ namespace coen79_lab2
     void statistician::reset() {
         len = 0;
         total = 0;
-        min = 9999;
-        max = -9999;
+        min = 0;
+        max = 0;
     }
 
     int statistician::length() const {
