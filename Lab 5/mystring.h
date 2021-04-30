@@ -1,3 +1,9 @@
+/*
+Names: Arren Leung and Alayna Wong
+Date: April 29, 2021
+Title: Lab 5, mystring.h
+*/
+
 // FILE: mystring.h
 // CLASS PROVIDED: string
 //
