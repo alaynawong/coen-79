@@ -3,3 +3,4 @@
 - Lab 2: Statistician and Pseudorandom Number Generator Projects
 - Lab 3: Sequence Class
 - Lab 4: Keyed Bag and Polynomial Classes
+- Lab 5: String Class
