@@ -8,7 +8,7 @@ namespace coen79_lab5
 {
     /* ---------- CONSTRUCTOR ---------- */
     string::string(const char str[] = "") {
-
+        
     }
 
     string::string(char c) {
@@ -16,6 +16,10 @@ namespace coen79_lab5
     }
 
     string::string(const string& source) {
+
+    }
+
+    string::~string() {
 
     }
 
@@ -30,6 +34,10 @@ namespace coen79_lab5
 
     void string::operator +=(char addend) {
 
+    }
+
+    string& string::operator = (const string& source) {
+        
     }
 
     void string::reserve(size_t n) {
@@ -89,5 +97,30 @@ namespace coen79_lab5
 
     ostream& operator <<(ostream& outs, const string& source) {
 
+    }
+
+    /* ---------- COMPARISON OPERATORS ---------- */
+    bool operator ==(const string& s1, const string& s2) {
+
+    }
+
+    bool operator !=(const string& s1, const string& s2) {
+        
+    }
+
+    bool operator >(const string& s1, const string& s2) {
+        
+    }
+
+    bool operator <(const string& s1, const string& s2) {
+        
+    }
+
+    bool operator >=(const string& s1, const string& s2) {
+        
+    }
+
+    bool operator <=(const string& s1, const string& s2) {
+        
     }
 }
