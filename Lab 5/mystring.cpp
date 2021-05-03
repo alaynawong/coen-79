@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cassert>
+#include <cstring>
 #include "mystring.h"
 
 using namespace std;
@@ -8,24 +9,36 @@ namespace coen79_lab5
 {
     /* ---------- CONSTRUCTOR ---------- */
     string::string(const char str[] = "") {
-        
+        current_length = strlen(str);
+        allocated = current_length + 1;
+        characters = new char[allocated];
+        strncpy(characters, str, allocated);
     }
 
     string::string(char c) {
-        
+        current_length = 1;
+        allocated = 2;
+        characters = new char[allocated];
+        characters[0] = c;
+        characters[1] = '/0';
     }
 
     string::string(const string& source) {
-
+        current_length = source.current_length;
+        allocated = source.allocated;
+        characters = new char[allocated];
+        strncpy(characters, source.characters, allocated);
     }
 
     string::~string() {
-
+        delete[] characters;
+        current_length = 0;
+        allocated = 0;
     }
 
     /* ---------- MODIFICATION MEMBER FUNCTIONS ---------- */
     void string::operator +=(const string& addend) {
-
+    
     }
 
     void string::operator +=(const char addend[]) {
@@ -37,7 +50,7 @@ namespace coen79_lab5
     }
 
     string& string::operator = (const string& source) {
-        
+
     }
 
     void string::reserve(size_t n) {
