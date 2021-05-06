@@ -79,7 +79,6 @@ namespace coen79_lab5
             // resutling string is half of string + source + other half of string
             characters[position] += temp[j];
         }
-        
     }
 
     void string::dlt(unsigned int position, unsigned int num) {
