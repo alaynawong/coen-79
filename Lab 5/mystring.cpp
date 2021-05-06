@@ -9,6 +9,7 @@ Title: Lab 5, mystring.cpp
 #include <cassert>
 #include <string.h>
 #include <cctype>
+#include <cstring>
 #include "mystring.h"
 
 using namespace std;
@@ -18,7 +19,7 @@ namespace coen79_lab5
     // Constructor
     // Precondition: str is an ordinary null-terminated string
     // The string contains the sequence of chars from str
-    string::string(const char str[])
+    string::string(const char str[] = "")
     {
         current_length = strlen(str);           // Set to the length of str
         allocated = current_length + 1;         // Set to length + 1 to allocate enough space
