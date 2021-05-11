@@ -21,7 +21,6 @@ using namespace std;
 namespace coen79_lab6
 {
 	/* ---------- FUNCTIONS FOR THE LINKED LIST TOOLKIT ---------- */
-	
     size_t list_length(const node* head_ptr)
     // Library facilities used: cstdlib
     {
@@ -150,7 +149,6 @@ namespace coen79_lab6
     }
 
 	/* ---------- FUNCTIONS TO IMPLEMENT ---------- */
-
 	// Precondition: start_ptr and end_ptr are pointers to nodes on the same
 	// linked list, with the start_ptr node at or before the end_ptr node
 	// Postcondition: head_ptr and tail_ptr are the head and tail pointers for a
