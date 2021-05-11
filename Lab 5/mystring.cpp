@@ -10,6 +10,8 @@ Title: Lab 5, mystring.cpp
 #include <cstring>
 #include "mystring.h"
 
+using namespace std;
+
 namespace coen79_lab5
 {
     /* ---------- CONSTRUCTOR ---------- */
@@ -119,7 +121,7 @@ namespace coen79_lab5
     }
 
     // Precondition: (position + num) <= length()
-    // Num charaacters are deleted from the sequence, starting at the index position
+    // Num characters are deleted from the sequence, starting at the index position
     void string::dlt(unsigned int position, unsigned int num) {
         assert((position + num) <= length());
         for(size_t i = position; i <= current_length - num; i++) {
