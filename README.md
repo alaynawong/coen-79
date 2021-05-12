@@ -4,4 +4,4 @@
 - Lab 3: Sequence Class
 - Lab 4: Keyed Bag and Polynomial Classes
 - Lab 5: String Class
-- Lab 6: Sequnce Class (Using Linked List)
+- Lab 6: Sequence Class (Using Linked List)
