@@ -149,6 +149,7 @@ namespace coen79_lab6
     }
 
 	/* ---------- FUNCTIONS TO IMPLEMENT ---------- */
+	// Arren Leung
 
     void list_piece(node* start_ptr, node* end_ptr, node*& head_ptr, node*& tail_ptr)
     // Precondition: start_ptr and end_ptr are pointers to nodes on the same
