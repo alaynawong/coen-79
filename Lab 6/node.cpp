@@ -148,7 +148,7 @@ namespace coen79_lab6
     	}
     }
 
-    /* ---------- FUNCTIONS TO IMPLEMENT ---------- */
+	/* ---------- FUNCTIONS TO IMPLEMENT ---------- */
 
 	void list_piece(node* start_ptr, node* end_ptr, node*& head_ptr, node*& tail_ptr)
 	// Precondition: start_ptr and end_ptr are pointers to nodes on the same
@@ -173,7 +173,7 @@ namespace coen79_lab6
 		}
 	}
 
-    size_t list_occurrences(node* head_ptr, const node::value_type& target)
+    	size_t list_occurrences(node* head_ptr, const node::value_type& target)
 	// Precondition: head_ptr is the head pointer of a linked list.
 	// Postcondition: The return value is the count of the number of times
 	// target appears as the data portion of a node on the linked list.
@@ -192,7 +192,7 @@ namespace coen79_lab6
 		return count;
 	}
 
-    void list_insert_at(node*& head_ptr, const node::value_type& entry, size_t position)
+    	void list_insert_at(node*& head_ptr, const node::value_type& entry, size_t position)
 	//     Precondition: head_ptr is the head pointer of a linked list, and
 	//     position > 0 and position <= list_length(head_ptr)+1.
 	//     Postcondition: A new node has been added to the linked list with entry
@@ -213,7 +213,7 @@ namespace coen79_lab6
 			list_insert(list_locate(head_ptr, position - 1), entry);
 	}
 
-    node::value_type list_remove_at(node*& head_ptr, size_t position)
+    	node::value_type list_remove_at(node*& head_ptr, size_t position)
 	// Precondition: head_ptr is the head pointer of a linked list, and
 	// position > 0 and position <= list_length(head_ptr).
 	// Postcondition: The node at the specified position has been removed from
@@ -235,7 +235,7 @@ namespace coen79_lab6
 		return delete_data;
 	}
 
-    node* list_copy_segment(node* head_ptr, size_t start, size_t finish)
+    	node* list_copy_segment(node* head_ptr, size_t start, size_t finish)
 	// Precondition: head_ptr is the head pointer of a linked list, and
 	// (1 <= start) and (start <= finish) and (finish <= list_length(head_ptr)).
 	// Postcondition: The value returned is the head pointer for
@@ -257,7 +257,7 @@ namespace coen79_lab6
 		return head;
 	}
 
-    void list_print (const node* head_ptr)
+    	void list_print (const node* head_ptr)
 	// Precondition: head_ptr is the head pointer of a linked list, and
 	// the operator << has been defined for the value_type
 	// Postcondition: The value_type of all the nodes in the linked list are printed
@@ -277,8 +277,8 @@ namespace coen79_lab6
 		cout << endl;
 		return;
 	}
-
-    void list_remove_dups(node* head_ptr)
+	
+	void list_remove_dups(node* head_ptr)
 	// Precondition: head_ptr is the head pointer of a linked list
 	// Postcondition: All the duplicates are removed from the linked list
 	// Example: If the list contains 1,1,1,2, after running this function the list
@@ -299,7 +299,7 @@ namespace coen79_lab6
 		}
 	}
 
-    node* list_detect_loop(node* head_ptr)
+    	node* list_detect_loop(node* head_ptr)
 	// Precondition: head_ptr is the head pointer of a linked list
 	// Postcondition: If there is a loop in the linked list, the returned value
 	// is a pointer to the start of the loop. The returned value is NULL if
