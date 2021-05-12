@@ -148,7 +148,7 @@ namespace coen79_lab6
         }
     }
 
-    /* ---------- FUNCTIONS TO IMPLEMENT ---------- */
+	/* ---------- FUNCTIONS TO IMPLEMENT ---------- */
 
     void list_piece(node* start_ptr, node* end_ptr, node*& head_ptr, node*& tail_ptr)
     // Precondition: start_ptr and end_ptr are pointers to nodes on the same
@@ -172,7 +172,7 @@ namespace coen79_lab6
             tail_ptr = tail_ptr->link();
         }
     }
-
+  
     size_t list_occurrences(node* head_ptr, const node::value_type& target)
     // Precondition: head_ptr is the head pointer of a linked list.
     // Postcondition: The return value is the count of the number of times
@@ -191,7 +191,6 @@ namespace coen79_lab6
 
         return count;
     }
-
     void list_insert_at(node*& head_ptr, const node::value_type& entry, size_t position)
     //     Precondition: head_ptr is the head pointer of a linked list, and
     //     position > 0 and position <= list_length(head_ptr)+1.
